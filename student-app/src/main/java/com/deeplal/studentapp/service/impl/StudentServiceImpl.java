@@ -41,39 +41,4 @@ public class StudentServiceImpl implements StudentService {
 		studentRepository.deleteById(id);
 	}
 
-//	@Override
-//	public List<Student> getStudents() {
-//		return StudentStaticData.getStudentStaticData();
-//	}
-//
-//	@Override
-//	public Student getStudent(long id) {
-//		List<Student> students = StudentStaticData.getStudentStaticData().stream()
-//				.filter(student -> (student.getId() == id)).collect(Collectors.toList());
-//		return CollectionUtils.isEmpty(students) ? null : students.get(0);
-//	}
-//
-//	@Override
-//	public void addStudent(Student student) {
-//		StudentStaticData.getStudentStaticData().add(student);
-//	}
-//
-//	@Override
-//	public String updateStudent(long id, Student student) {
-//		Student existsStudent = this.getStudent(id);
-//		if (Objects.isNull(existsStudent)) {
-//			return "No such id present : " + id;
-//		} else {
-//			StudentStaticData.getStudentStaticData().remove(existsStudent);
-//			StudentStaticData.getStudentStaticData().add(student);
-//			return "Updated id : " + id;
-//		}
-//	}
-//
-//	@Override
-//	public void deleteStudent(long id) {
-//		Student existsStudent = this.getStudent(id);
-//		StudentStaticData.getStudentStaticData().remove(existsStudent);
-//	}
-
 }
